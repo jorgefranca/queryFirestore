@@ -4,12 +4,12 @@ import { getFirestore, collection, query, where, doc, getDocs, getDoc, orderBy }
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAOqum3VQCE7wSind9NHkpdbslD4nD2pmQ",
-  authDomain: "teste-fadb8.firebaseapp.com",
-  projectId: "teste-fadb8",
-  storageBucket: "teste-fadb8.appspot.com",
-  messagingSenderId: "355553363411",
-  appId: "1:355553363411:web:638e2b94e20bf19613db26"
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
 };
 
 // Initialize Firebase
@@ -17,8 +17,8 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 //, where("project","==","gtt")
 //query 
-var project = 'gtrel';
-var entidade = '121212';
+var project = 'nomeDoProjeto';
+var entidade ='nomeDaEntidade';
 
 // List user by project
 // const q = query(collection(db,'users'), orderBy("roles."+project));
